@@ -1,0 +1,58 @@
+{
+  "name": "microjpeg",
+  "version": "0.1.0",
+  "description": "Deliver micro-sized images to clients by decoupling a static JPEG header",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "clean": "rimraf lib && mkdir lib",
+    "build": "npm run clean && babel --presets es2015 -d ./lib ./src --minified",
+    "watch": "nodemon src/ --exec \"babel-node --presets es2015 src/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abstractvector/microjpeg.git"
+  },
+  "keywords": [
+    "jpeg",
+    "preview",
+    "facebook",
+    "header",
+    "image",
+    "binary"
+  ],
+  "author": "Matt Knight <matthew.knight@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abstractvector/microjpeg/issues"
+  },
+  "homepage": "https://github.com/abstractvector/microjpeg#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "linebreak-style": 0,
+      "class-methods-use-this": 0
+    }
+  },
+  "dependencies": {
+    "jpeg-js": "^0.3.3"
+  }
+}
