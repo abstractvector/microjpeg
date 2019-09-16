@@ -28,14 +28,14 @@
   },
   "homepage": "https://github.com/abstractvector/microjpeg#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.2.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.7.0",
-    "nodemon": "^1.11.0",
-    "rimraf": "^2.6.1"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.2",
+    "rimraf": "^3.0.0"
   },
   "eslintConfig": {
     "extends": "airbnb-base",
@@ -48,8 +48,8 @@
     }
   },
   "dependencies": {
-    "jpeg-js": "^0.3.3",
-    "sharp": "^0.19.0"
+    "jpeg-js": "^0.3.6",
+    "sharp": "^0.23.0"
   },
   "babel": {
     "presets": [
