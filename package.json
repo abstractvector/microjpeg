@@ -1,6 +1,6 @@
 {
   "name": "microjpeg",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Deliver micro-sized images to clients by decoupling a static JPEG header",
   "main": "lib/index.js",
   "scripts": {
